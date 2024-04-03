@@ -11,7 +11,7 @@ install WiringPi first
 cd WiringPi\wiringPi
 sudo make install
 
-go get github.com/hugozhu/rpi
+go get github.com/kodybrown/wiringpi-go
 ```
 
 # GPIO numbering
@@ -36,7 +36,6 @@ wiringPi   | Name     | GPIO.BOARD    | GPIO.BCM
 15         |TXD       | 8             | 14
 16         |RXD       | 10            | 15
 
-more to read at: [http://hugozhu.myalert.info/2013/03/22/19-raspberry-pi-gpio-port-naming.html](http://hugozhu.myalert.info/2013/03/22/19-raspberry-pi-gpio-port-naming.html)
 
 # Sample codes
 
@@ -45,7 +44,7 @@ more to read at: [http://hugozhu.myalert.info/2013/03/22/19-raspberry-pi-gpio-po
 package main
 
 import (
-    . "github.com/hugozhu/rpi"
+    . "github.com/kodybrown/wiringpi-go"
 )
 
 func main() {
